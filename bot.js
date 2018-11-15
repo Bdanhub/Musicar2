@@ -321,7 +321,7 @@ client.on('message', message => {
     if (message.content === '1!help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت !1**')
+        .setDescription('**برفكس البوت !2**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
@@ -349,7 +349,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     var prefix = "1!"
-if (message.content.startsWith(prefix + "uptime")) {
+if (message.content.startsWith(prefix + "up.time")) {
    let uptime = client.uptime;
 
    let days = 0;
