@@ -318,7 +318,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '1!help') {
+    if (message.content === '2!help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت !2**')
@@ -348,7 +348,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    var prefix = "1!"
+    var prefix = "2!"
 if (message.content.startsWith(prefix + "up.time")) {
    let uptime = client.uptime;
 
@@ -392,11 +392,12 @@ if (message.content.startsWith(prefix + "up.time")) {
 });
 
 client.on('ready', () => {
-  client.user.setGame(` 1!help .`,'');
+  client.user.setGame(' 2!help   2!play • ','https://www.twitch.tv/peery13');
   console.log('---------------');
-  console.log('Desert Bot Is Online')
+  console.log(' Bot Is Online')
   console.log('---------------')
 });
+
 
 
 
