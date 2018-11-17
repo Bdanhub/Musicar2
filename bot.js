@@ -392,7 +392,7 @@ if (message.content.startsWith(prefix + "up.time")) {
 });
 
 client.on('ready', () => {
-  client.user.setGame(' 2!help   2!play • ','https://www.twitch.tv/peery13');
+  client.user.setGame(' =help   =play • ','https://www.twitch.tv/peery13');
   console.log('---------------');
   console.log(' Bot Is Online')
   console.log('---------------')
